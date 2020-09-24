@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:id="@+id/CaptureVideoButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Capture Video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:id="@+id/CaptureVideoWithoutDataButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Capture Video without Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CaptureVideoButton"
+        tools:ignore="MissingConstraints">
+    </Button>
+
+    <Button
+        android:text="Play Video"
+        android:id="@+id/PlayVideoButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CaptureVideoWithoutDataButton"
+        tools:ignore="MissingConstraints">
+    </Button>
+
+
+    <VideoView
+        android:id="@+id/VideoView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_videoview"
+        tools:ignore="MissingConstraints">
+    </VideoView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
